@@ -7,9 +7,9 @@ import os
 
 
 
-AUTH0_DOMAIN = 'coffee-app-ufsnd.us.auth0.com'
+AUTH0_DOMAIN = os.getenv('AUTH0_DOMAIN', 'coffee-app-ufsnd.us.auth0.com')
 ALGORITHMS = ['RS256']
-API_AUDIENCE = 'drink'
+API_AUDIENCE = os.getenv('API_AUDIENCE', 'drink')
 
 ## AuthError Exception
 '''
